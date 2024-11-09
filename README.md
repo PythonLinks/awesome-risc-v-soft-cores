@@ -28,15 +28,15 @@ Getting your organization to accept SpinalHDL is a huge challenge.  But building
 
 ### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
 
-## Larger Soft Cores
+## Larger Portable Soft Cores
 
 Here are the larger portable soft cores, ones which cannot run on an ICE40 board.  
 
 - [Bluespac](https://bluespec.com/products#portable)
 
-## Commercial Solutions
+## FPGA Specific Solutions
 
-Most of the vendors provide RISC-V soft cores optimised for their platform.   They are listed here. 
+Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.   They will be listed here.  so this section will really be a comparison between (board+Soft core) from each of the vendors.
 
 - AMD/Xilinx MicroBlaze V
 
@@ -46,4 +46,4 @@ Most of the vendors provide RISC-V soft cores optimised for their platform.   Th
 
 ## Financial Disclosure Statement
 
- The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to run their RISC-V cores on the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).  
+ The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to port their RISC-V cores to the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).  
