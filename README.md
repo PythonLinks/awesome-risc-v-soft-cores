@@ -1,10 +1,8 @@
 # RISC-V Shoot Out
 
-This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.  This repository should help you choose. 
+This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.   There is a curated [List of important RISC-V cores](https://github.com/xmpf/awesome-risc-v#implementations), but it is neither categorized, nor opinionatied.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
 
-
-
-This document will soon cover a vast amount of code.  If there are any mistakes, please forgive us and create an issue or make a pull request. 
+This document will soon cover a vast amount of code.  If there are any mistakes, please forgive me and create an issue or make a pull request.  
 
 ## 1. Tiny Cores
 
@@ -52,9 +50,9 @@ Here are the larger portable soft cores, ones which cannot run on an ICE40 board
 This is the soft core created by the open source Yosys synthesizer team. ""It can be configured as RV32E, RV32I, RV32IC, RV32IM, or RV32IMC core, and optionally
 contains a built-in interrupt controller.
 
+### [Bluespac](https://bluespec.com/products#portable)
 
 
-- [Bluespac](https://bluespec.com/products#portable)
 
 ## 4. FPGA Vendor Specific Solutions
 
@@ -66,6 +64,14 @@ Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.
 
 - Microchip**, Mi-V RV32 Soft RISC-V Processor
 
-## Financial Disclosure Statement
+## 5. Contributing
 
- The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to port their RISC-V cores to the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).  
+To have your soft core listed here you need to first be approved by the Awesome RISC-V list.  To receive a link to your blog posting about one of these cores, please post an issue, and I will consider it. For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention   
+
+## 6. Financial Disclosure Statement
+
+ The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to port their RISC-V cores to the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).   At some point I will also talk about very small stack machines here. 
+
+## 7. Other Risc-V Soft Core Lists.
+
+There are a number of other RISC-v soft core lists. Two are 5 years old. One is 3 years old.  One if based on vendor submissions, rather than editorial reviews.  One includes hard cores.   Surprising that no one else has created a list like this.  
