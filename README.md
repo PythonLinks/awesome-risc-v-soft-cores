@@ -2,6 +2,8 @@
 
 This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.  This repository should help you choose. 
 
+
+
 This document will soon cover a vast amount of code.  If there are any mistakes, please forgive us and create an issue or make a pull request. 
 
 ## 1. Tiny Cores
@@ -31,7 +33,9 @@ A platform independent VHDL processor with an emphasis on error-checking.
 > Special focus is paid on **execution safety** to provide defined and predictable behavior at any time.  For example, the CPU ensures *all* memory accesses are properly acknowledged and *all* invalid/malformed
 > instructions are always detected as such. Whenever an unexpected state occurs the application software is informed via *precise* and resumable hardware exceptions.   
 
-### [VexRiscv](https://github.com/SpinalHDL/VexRiscv) 
+
+
+### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
 [Video](https://www.youtube.com/watch?v=dR_jqS13D2c)  This is a very configurable CPU written in its own langauge SpinalHDL whitten in Scala.  it is perfect for pipelined CPUs.  You can edit code in one file which affects different parts of the pipeline.  Don't even think of trying to do that in Verilog or VHDL. Of course there is a huge learning curve here.  Scala and SpinalHDL are both quite large. Like the author says, do not start by reading the code of an expert SpinalHDL developers, start with the much simpler tutorials, and slowly build up to understanding more complex ideas. 
 
@@ -42,6 +46,13 @@ Getting your organization to accept SpinalHDL is a huge challenge.  But building
 ## 3. Larger Portable Soft Cores
 
 Here are the larger portable soft cores, ones which cannot run on an ICE40 board.  
+
+### [PicoRV32](https://github.com/YosysHQ/picorv32/tree/main)
+
+This is the soft core created by the open source Yosys synthesizer team. ""It can be configured as RV32E, RV32I, RV32IC, RV32IM, or RV32IMC core, and optionally
+contains a built-in interrupt controller.
+
+
 
 - [Bluespac](https://bluespec.com/products#portable)
 
