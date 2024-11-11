@@ -22,7 +22,7 @@ This section compares RISC-V soft cores which can run on the less expensive, mor
 
 ### [FemtoRV](https://github.com/dloubach/femtorv32)
 
-This is a great cpu for learning verilog. Starting with a blinky, the system goes through 20 metamorphosii and becomes a RISC-V chip.  The creator Bruno Levy is this charming professorial type, and his hench man Matthia Koch is a brilliant technologist.  
+This is a great cpu for learning verilog. Starting with a blinky, the system goes through 20 metamorphosii and becomes a RISC-V chip.  The creator Bruno Levy is this charming professorial type, and his hench man Matthia Koch is a brilliant technologist.  [@BrunoLevy](https://mastodon.social/@BrunoLevy01@fosstodon.org)  [@Mecrisp](https://mastodon.social/@Mecrisp@chaos.social)
 
 ### [NEORV32](https://github.com/stnolting/neorv32)
 
@@ -60,7 +60,9 @@ This is an award winning soft core, with great demos, listed above.   Getting yo
 
 ### [PipelineC RISC-V](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_563)
 
-[PipelineC](https://github.com/JulianKemmerer/PipelineC) is a very accessible way to program FPGAs.  Wlhle Verilog is very hard to learn, data flow using a functional programming approach in C is very understandable for the beginner.     [Slides](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_528)
+[PipelineC](https://github.com/JulianKemmerer/PipelineC) is a very accessible way to program FPGAs.  Whle Verilog is very hard to learn, data flow using a functional programming approach in C is very understandable for the beginner.     [Slides](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_528) [@PipelineC](https://mastodon.social/@pipelinec@fosstodon.org)
+
+
 
 ### [Clash RISC-V](https://github.com/adamwalker/clash-riscv)
 
@@ -78,7 +80,7 @@ Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.
 
 ## 6. Contributing
 
-To have your soft core listed here you need to first be approved by the Awesome RISC-V list.  To receive a link to your blog posting about one of these cores, please post an issue, and I will consider it. For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention   
+Contributions are welcome.  What do you want added?  Please get off of corporate social media, and message me [@PythonLinks](https://mastodon.social/deck/@PythonLinks)on open-source, propaganda and censoreship free Discord.   For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention "@Christopher Lozinski".  
 
 ## 7. Financial Disclosure Statement
 
