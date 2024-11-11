@@ -31,8 +31,6 @@ A platform independent VHDL processor with an emphasis on error-checking.
 > Special focus is paid on **execution safety** to provide defined and predictable behavior at any time.  For example, the CPU ensures *all* memory accesses are properly acknowledged and *all* invalid/malformed
 > instructions are always detected as such. Whenever an unexpected state occurs the application software is informed via *precise* and resumable hardware exceptions.   
 
-
-
 ### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
 [Video](https://www.youtube.com/watch?v=dR_jqS13D2c)  This is a very configurable CPU written in its own langauge SpinalHDL whitten in Scala.  it is perfect for pipelined CPUs.  You can edit code in one file which affects different parts of the pipeline.  Don't even think of trying to do that in Verilog or VHDL. Of course there is a huge learning curve here.  Scala and SpinalHDL are both quite large. Like the author says, do not start by reading the code of an expert SpinalHDL developers, start with the much simpler tutorials, and slowly build up to understanding more complex ideas. 
@@ -52,9 +50,23 @@ contains a built-in interrupt controller.
 
 ### [Bluespac](https://bluespec.com/products#portable)
 
+## 4. Language Specific Solutions
 
+There are a number of RISC-V cores built in languages other than Verilog, or VHDL.  Here are some notable ones worth mentioning. 
 
-## 4. FPGA Vendor Specific Solutions
+### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
+
+This is an award winning soft core, with great demos, listed above.   Getting your organization to accept SpinalHDL is a huge challenge. But building complex configurable pipelined CPUs in Verilog is a bigger challenge.
+
+### [PipelineC RISC-V](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_563)
+
+[PipelineC](https://github.com/JulianKemmerer/PipelineC) is a very accessible way to program FPGAs.  Wlhle Verilog is very hard to learn, data flow using a functional programming approach is very understandable for the beginner.     [Slides](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_528)
+
+### [Clash RISC-V](https://github.com/adamwalker/clash-riscv)
+
+[Clash](https://clash-lang.org/)  is an HDL written in Haskell, a functional programmign language.  Like the author said, functional programming is very inefficient, but it is a great way to model digital circuits.  There is no way anyyone could know all of the different hardware HDLs, but this one appeals to me the most.  I could be wrong.  Of course getting your organization to approve Haskell could be a hard sell.
+
+## 5. FPGA Vendor Specific Solutions
 
 Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.   They will be listed here.  so this section will really be a comparison between (board+Soft core) from each of the vendors.
 
@@ -64,14 +76,14 @@ Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.
 
 - Microchip**, Mi-V RV32 Soft RISC-V Processor
 
-## 5. Contributing
+## 6. Contributing
 
 To have your soft core listed here you need to first be approved by the Awesome RISC-V list.  To receive a link to your blog posting about one of these cores, please post an issue, and I will consider it. For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention   
 
-## 6. Financial Disclosure Statement
+## 7. Financial Disclosure Statement
 
  The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to port their RISC-V cores to the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).   At some point I will also talk about very small stack machines here. 
 
-## 7. Other Risc-V Soft Core Lists.
+## 8. Other Risc-V Soft Core Lists.
 
 There are a number of other RISC-v soft core lists. Two are 5 years old. One is 3 years old.  One if based on vendor submissions, rather than editorial reviews.  One includes hard cores.   Surprising that no one else has created a list like this.  
