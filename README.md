@@ -37,7 +37,13 @@ A platform independent VHDL processor with an emphasis on error-checking.
 
 Getting your organization to accept SpinalHDL is a huge challenge.  But building complex configurable pipelined CPUs in Verilog is a bigger challenge. 
 
+### [ICE-V Dual](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.mdhttps://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.md) and [Ice-V Dual Fermata](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDualFermata.md)
+
+These cpus have to cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into twothreads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
+
 ### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
+
+
 
 ## 3. Larger Portable Soft Cores
 
@@ -58,11 +64,9 @@ There are a number of RISC-V cores built in languages other than Verilog, or VHD
 
 This is an award winning soft core, with great demos, listed above.   Getting your organization to accept SpinalHDL is a huge challenge. But building complex configurable pipelined CPUs in Verilog is a bigger challenge.
 
-### [PipelineC RISC-V](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_563)
+### [PipelineC RISCV-V + FFT](https://github.com/JulianKemmerer/PipelineC/wiki/Example:-FFT-SoC)
 
 [PipelineC](https://github.com/JulianKemmerer/PipelineC) is a very accessible way to program FPGAs.  Whle Verilog is very hard to learn, data flow using a functional programming approach in C is very understandable for the beginner.     [Slides](https://docs.google.com/presentation/d/e/2PACX-1vTq_OBXkCZ7wBW3qIMDTh55j0FB8w0hHHSCR16SCR8G3qS5QIDEcL-aZhrrkgxP4fehcs-KFkOIVYVL/pub?start=false&loop=true&delayms=5000&slide=id.g3119700989c_0_528) [@PipelineC](https://mastodon.social/@pipelinec@fosstodon.org)
-
-
 
 ### [Clash RISC-V](https://github.com/adamwalker/clash-riscv)
 
