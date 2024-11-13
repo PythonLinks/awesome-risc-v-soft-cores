@@ -1,6 +1,6 @@
 # RISC-V Shoot Out
 
-This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.   There is a curated [List of important RISC-V cores](https://github.com/xmpf/awesome-risc-v#implementations), but it is neither categorized, nor opinionatied.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
+This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.   There is a curated [List of important RISC-V cores](https://github.com/xmpf/awesome-risc-v#implementations), but it is not current, categorized, nor opinionatied.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
 
 This document will soon cover a vast amount of code.  If there are any mistakes, please forgive me and create an issue or make a pull request.  
 
@@ -18,7 +18,7 @@ The Serve soft core has a 1 bit wide data path, only requires 198 ICE40 LUTs, bu
 
 ### [NanoV](https://github.com/MichaelBell/nanoV/blob/main/README.md)
 
-A bit serial processor, where the registers rotate. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM, like Flash, but can be written to 10,000,000,000,000 times.
+A bit serial processor, where the registers rotate. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM), like Flash, but can be written to 10,000,000,000,000 times.
 
 ## 2. ICE40 Soft Cores
 
