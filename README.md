@@ -16,6 +16,10 @@ The Serve soft core has a 1 bit wide data path, only requires 198 ICE40 LUTs, bu
 
 [Video](https://youtu.be/rRPVVCbpF5M) FaxyRV has a scalable data path to 1, 2, 4, or 8 bits with many variants.
 
+### [NanoV](https://github.com/MichaelBell/nanoV/blob/main/README.md)
+
+A bit serial processor, where the registers rotate using a circular shift register.  Memory is FerroElectric RAM, like Flash, but can be written to 10,000,000,000,000 times.
+
 ## 2. ICE40 Soft Cores
 
 This section compares RISC-V soft cores which can run on the less expensive, more popular Lattice ICE40 UP5K FPGA.  
@@ -42,8 +46,6 @@ Getting your organization to accept SpinalHDL is a huge challenge.  But building
 These cpus have to cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into twothreads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
 
 ### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
-
-
 
 ## 3. Larger Portable Soft Cores
 
