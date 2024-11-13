@@ -18,7 +18,7 @@ The Serve soft core has a 1 bit wide data path, only requires 198 ICE40 LUTs, bu
 
 ### [NanoV](https://github.com/MichaelBell/nanoV/blob/main/README.md)
 
-A bit serial processor, where the registers rotate using a circular shift register.  Memory is FerroElectric RAM, like Flash, but can be written to 10,000,000,000,000 times.
+A bit serial processor, where the registers rotate. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM, like Flash, but can be written to 10,000,000,000,000 times.
 
 ## 2. ICE40 Soft Cores
 
