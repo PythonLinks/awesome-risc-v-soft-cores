@@ -1,8 +1,6 @@
 # RISC-V Shoot Out
 
-This repository compares RISC-V soft cores in order to help you choose the best one for your application.  There are so many of these soft cores, it is very hard to choose the right one.   There is a curated [List of important RISC-V cores](https://github.com/xmpf/awesome-risc-v#implementations), but it is not current, categorized, nor opinionatied.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
-
-This document will soon cover a vast amount of code.  If there are any mistakes, please forgive me and create an issue or make a pull request.  
+There are so many RISC-V soft cores that it s very hard to choose the right one.  In order to help you choose the best RISC-V soft core for your application,  this directory categorizes the important ones and provides a brief introduction.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
 
 ## 1. Tiny Cores
 
@@ -18,7 +16,7 @@ The Serve soft core has a 1 bit wide data path, only requires 198 ICE40 LUTs, bu
 
 ### [NanoV](https://github.com/MichaelBell/nanoV/blob/main/README.md)
 
-A bit serial processor, where the registers rotate. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM), like Flash, but can be written to 10,000,000,000,000 times.
+A bit serial processor, which rotates through the bits. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM), like Flash, but can be written to 10,000,000,000,000 times.
 
 ## 2. ICE40 Soft Cores
 
@@ -37,7 +35,7 @@ A platform independent VHDL processor with an emphasis on error-checking.
 
 ### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
-[Video](https://www.youtube.com/watch?v=dR_jqS13D2c)  This is a very configurable CPU written in its own langauge SpinalHDL whitten in Scala.  it is perfect for pipelined CPUs.  You can edit code in one file which affects different parts of the pipeline.  Don't even think of trying to do that in Verilog or VHDL. Of course there is a huge learning curve here.  Scala and SpinalHDL are both quite large. Like the author says, do not start by reading the code of an expert SpinalHDL developers, start with the much simpler tutorials, and slowly build up to understanding more complex ideas. 
+This is a very configurable CPU written in its own langauge SpinalHDL whitten in Scala.  it is perfect for pipelined CPUs.  You can edit code in one file which affects different parts of the pipeline.  Don't even think of trying to do that in Verilog or VHDL. Of course there is a huge learning curve here.  Scala and SpinalHDL are both quite large. Like the author says, do not start by reading the code of an expert SpinalHDL developers, start with the much simpler tutorials, and slowly build up to understanding more complex ideas.  [Video](https://www.youtube.com/watch?v=dR_jqS13D2c)
 
 Getting your organization to accept SpinalHDL is a huge challenge.  But building complex configurable pipelined CPUs in Verilog is a bigger challenge. 
 
@@ -49,7 +47,9 @@ These cpus have to cores which share an ALU and control structures.  On calls an
 
 ## 3. Larger Portable Soft Cores
 
-Here are the larger portable soft cores, ones which cannot run on an ICE40 board.  
+### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
+
+This is an award winning soft core, with great demos, and a great reputation.  Is is descibed above.
 
 ### [PicoRV32](https://github.com/YosysHQ/picorv32/tree/main)
 
@@ -64,7 +64,9 @@ There are a number of RISC-V cores built in languages other than Verilog, or VHD
 
 ### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
-This is an award winning soft core, with great demos, listed above.   Getting your organization to accept SpinalHDL is a huge challenge. But building complex configurable pipelined CPUs in Verilog is a bigger challenge.
+This is an award winning soft core, with great demos, and a great reputation. Is is descibed above.
+
+
 
 ### [PipelineC RISCV-V + FFT](https://github.com/JulianKemmerer/PipelineC/wiki/Example:-FFT-SoC)
 
@@ -86,7 +88,7 @@ Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.
 
 ## 6. Contributing
 
-Contributions are welcome.  What do you want added?  Please get off of corporate social media, and message me [@PythonLinks](https://mastodon.social/deck/@PythonLinks)on open-source, propaganda and censoreship free Discord.   For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention "@Christopher Lozinski".  
+Contributions are welcome.  What do you want added?  Please get off of corporate social media, and message me [@PythonLinks](https://mastodon.social/deck/@PythonLinks) on open-source, propaganda and censoreship free Mastodon.   For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention "@Christopher Lozinski".  
 
 ## 7. Financial Disclosure Statement
 
