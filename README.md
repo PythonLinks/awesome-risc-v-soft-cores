@@ -51,6 +51,10 @@ These cpus have to cores which share an ALU and control structures.  On calls an
 
 This is an award winning soft core, with great demos, and a great reputation.  Is is descibed above.
 
+### [Hazard 3](https://github.com/Wren6991/Hazard3)
+
+Hazard 3 is both a hard core and a softcore.  It is the hard core on the Raspberry PI 2350, an amazing chip which I am using with the ICE40 FPgA on the $35 [Pico-Ice Circuit Board](https://tinyvision.ai/products/pico-ice-fpga-trainer-board) 
+
 ### [PicoRV32](https://github.com/YosysHQ/picorv32/tree/main)
 
 This is the soft core created by the open source Yosys synthesizer team. ""It can be configured as RV32E, RV32I, RV32IC, RV32IM, or RV32IMC core, and optionally
@@ -65,8 +69,6 @@ There are a number of RISC-V cores built in languages other than Verilog, or VHD
 ### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
 This is an award winning soft core, with great demos, and a great reputation. Is is descibed above.
-
-
 
 ### [PipelineC RISCV-V + FFT](https://github.com/JulianKemmerer/PipelineC/wiki/Example:-FFT-SoC)
 
