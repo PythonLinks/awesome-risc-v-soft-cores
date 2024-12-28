@@ -41,7 +41,7 @@ Getting your organization to accept SpinalHDL is a huge challenge.  But building
 
 ### [ICE-V Dual](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.mdhttps://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.md) and [Ice-V Dual Fermata](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDualFermata.md)
 
-These cpus have to cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into twothreads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
+These cpus have two cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into two threads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
 
 ### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
 
