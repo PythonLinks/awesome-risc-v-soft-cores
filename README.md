@@ -1,4 +1,4 @@
-# RISC-V Shoot Out
+# Awesome RISC-V Soft Cores
 
 There are so many RISC-V soft cores that it s very hard to choose the right one.  In order to help you choose the best RISC-V soft core for your application,  this directory categorizes the important ones and provides a brief introduction.  Some are good for education, some for error checking, some for size, some for speed, some for a particular FPGA architecture, some for name recognition.  This repository should help you sort through the noise and choose the best one for your needs.   
 
