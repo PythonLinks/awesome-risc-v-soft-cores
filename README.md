@@ -16,7 +16,20 @@ The Serve soft core has a 1 bit wide data path, only requires 198 ICE40 LUTs, bu
 
 ### [NanoV](https://github.com/MichaelBell/nanoV/blob/main/README.md)
 
-A bit serial processor, which rotates through the bits. On every clock cycle it accesses one 32 bit memory word, where each bit is from a different register.   Memory is FerroElectric RAM (FRAM), like Flash, but can be written to 10,000,000,000,000 times.
+This is more for TinyTapeout, than for FPGAs, but it is such an
+interesting idea, that i mention it here. This is the first Tiny
+tapeout RISC-V.  A bit serial processor, which rotates through the
+bits. On every clock cycle it accesses one 32 bit memory word, where
+each bit is from a different register.  Memory is FerroElectric RAM
+(FRAM), like Flash, but can be written to 10,000,000,000,000 times.
+
+### [Tiny-QV](https://github.com/MichaelBell/tinyQV)
+
+Another TinyTapeout CPU.  So many people that I respect are talking
+about it, that I had to mention it. The second Tiny Tapeout RISC-V.
+"The aim of this design is to make a small microcontroller that is as
+fast as practical given the Tiny Tapeout constraints, and sticking to
+a 2x2 tile size.
 
 ## 2. ICE40 Soft Cores
 
@@ -39,7 +52,7 @@ This is a very configurable CPU written in its own langauge SpinalHDL whitten in
 
 Getting your organization to accept SpinalHDL is a huge challenge.  But building complex configurable pipelined CPUs in Verilog is a bigger challenge. 
 
-### [ICE-V Dual](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.mdhttps://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.md) and [Ice-V Dual Fermata](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDualFermata.md)
+### [ICE-V Dual](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.md) and [Ice-V Dual Fermata](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDualFermata.md)
 
 These cpus have two cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into two threads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
 
