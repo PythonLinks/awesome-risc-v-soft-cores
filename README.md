@@ -52,13 +52,20 @@ This is a very configurable CPU written in its own langauge SpinalHDL whitten in
 
 Getting your organization to accept SpinalHDL is a huge challenge.  But building complex configurable pipelined CPUs in Verilog is a bigger challenge. 
 
+
+### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
+
+## 3. Barrel Processors
+
 ### [ICE-V Dual](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDual.md) and [Ice-V Dual Fermata](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/IceVDualFermata.md)
 
 These cpus have two cores which share an ALU and control structures.  On calls and jumps usually RISC-V computation pauses while the core loads thenext instruction and decodesit.  By alternatiing between the two cores, this problem is avoided.  And many applications can easily be split into two threads sharing the same memory.   By [@sylefeb@masodon.online](https://mastodon.online/@sylefeb)
 
-### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
+### [FGMT RISC-V](https://www.hs-osnabrueck.de/fileadmin/HSOS/Forschung/Recherche/Laboreinrichtungen_und_Versuchsbetriebe/Labor_fuer_Digital_und_Mikroprozessortechnik/FGMT-RiscV/RISCV-Summit-EU_2025_B.Lang.pdf)
 
-## 3. Larger Portable Soft Cores
+This is a pipelined RISC-V barrel processor, but the next instruction does not start until the first instrucion ends. What do they do with all of those idle pipeline stages, run multiple hardware threads.
+
+## 4. Larger Portable Soft Cores
 
 ### [VexRiscv](https://github.com/SpinalHDL/VexRiscv)
 
@@ -75,7 +82,7 @@ contains a built-in interrupt controller.
 
 ### [Bluespac](https://bluespec.com/products#portable)
 
-## 4. Language Specific Solutions
+## 5. Language Specific Solutions
 
 There are a number of RISC-V cores built in languages other than Verilog, or VHDL.  Here are some notable ones worth mentioning. 
 
@@ -91,7 +98,7 @@ This is an award winning soft core, with great demos, and a great reputation. Is
 
 [Clash](https://clash-lang.org/)  is an HDL written in Haskell, a functional programmign language.  Like the author said, functional programming is very inefficient, but it is a great way to model digital circuits.  There is no way anyyone could know all of the different hardware HDLs, but this one appeals to me the most.  I could be wrong.  Of course getting your organization to approve Haskell could be a hard sell.
 
-## 5. FPGA Vendor Specific Solutions
+## 6. FPGA Vendor Specific Solutions
 
 Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.   They will be listed here.  so this section will really be a comparison between (board+Soft core) from each of the vendors.
 
@@ -101,14 +108,14 @@ Most of the FPGA vendors provide RISC-V soft cores optimised for their platform.
 
 - Microchip**, Mi-V RV32 Soft RISC-V Processor
 
-## 6. Contributing
+## 7. Contributing
 
 Contributions are welcome.  What do you want added?  Please get off of corporate social media, and message me [@PythonLinks](https://mastodon.social/deck/@PythonLinks) on open-source, propaganda and censoreship free Mastodon.   For longer discussions, please visit the [FPGA Discord Server, RISC-V channel](https://discord.gg/pZhvTPHf9V) and mention "@Christopher Lozinski".  
 
-## 7. Financial Disclosure Statement
+## 8. Financial Disclosure Statement
 
  The author does not produce, support nor endorse any specific RISC-V cores. He does not accept financial inducements from any of the RISC-V core vendors. Instead he wants everyone to port their RISC-V cores to the [pico-ice circuit board](https://pico-ice.tinyvision.ai/), and buy many [$35 pico-ice boards](https://tinyvision.ai/products/pico-ice-fpga-trainer-board).   At some point I will also talk about very small stack machines here. 
 
-## 8. Other Risc-V Soft Core Lists.
+## 9. Other Risc-V Soft Core Lists.
 
 There are a number of other RISC-v soft core lists. Two are 5 years old. One is 3 years old.  One if based on vendor submissions, rather than editorial reviews.  One includes hard cores.   Surprising that no one else has created a list like this.  
