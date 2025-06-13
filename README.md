@@ -52,7 +52,6 @@ This is a very configurable CPU written in its own langauge SpinalHDL whitten in
 
 Getting your organization to accept SpinalHDL is a huge challenge.  But building complex configurable pipelined CPUs in Verilog is a bigger challenge. 
 
-
 ### [MicroRV32](https://github.com/agra-uni-bremen/microrv32)
 
 ## 3. Barrel Processors
@@ -63,7 +62,7 @@ These cpus have two cores which share an ALU and control structures.  On calls a
 
 ### [FGMT RISC-V](https://www.hs-osnabrueck.de/fileadmin/HSOS/Forschung/Recherche/Laboreinrichtungen_und_Versuchsbetriebe/Labor_fuer_Digital_und_Mikroprozessortechnik/FGMT-RiscV/RISCV-Summit-EU_2025_B.Lang.pdf)
 
-This is a pipelined RISC-V barrel processor, but the next instruction does not start until the first instrucion ends. What do they do with all of those idle pipeline stages, run multiple hardware threads.
+This is a pipelined RISC-V barrel processor, but the next instruction does not start until the first instrucion ends. What do they do with all of those idle pipeline stages, run multiple hardware threads.  [GitHub](https://github.com/BLangOS/FGMT_RiscV) [Talk](https://www.fpga-conference.eu/program-2025-day-two#lang)
 
 ## 4. Larger Portable Soft Cores
 
